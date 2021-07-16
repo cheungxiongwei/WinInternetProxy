@@ -1,24 +1,24 @@
 # WinInternetProxy
 
-`WinInternetProxy` ÊµÏÖÁË¿ÉÊ¹ÓÃ´úÂëÉèÖÃÏµÍ³´úÀí¹¦ÄÜ£¬¿ÉÊ¹ÓÃÔÚ v2ray¡¢trojan-go µÈĞèÒªÉèÖÃ `ÏµÍ³IE´úÀí` ÀàËÆµÄ¹¤¾ßÖĞ¡£
+`WinInternetProxy` æ˜¯ä¸€æ¬¾ Windows ç³»ç»Ÿä»£ç†é…ç½®åŠŸèƒ½é¡¹ï¼Œå¯ä½¿ç”¨ä»£ç è®¾ç½®ç³»ç»Ÿä»£ç†åŠŸèƒ½ï¼Œå¯åº”ç”¨åœ¨ v2rayã€trojan-go ç­‰éœ€è¦è®¾ç½® `ç³»ç»ŸIEä»£ç†` ç±»ä¼¼çš„å·¥å…·ä¸­ã€‚
 
-### ÈçºÎÊ¹ÓÃ£¿
+### å¦‚ä½•ä½¿ç”¨ï¼Ÿ
 ```c++
 #include <iostream>
 #include "WinInternetProxy.h"
 
 int main()
 {
-	// ÊµÀı»¯Ò»¸öÀà
+	// å®ä¾‹åŒ–ä¸€ä¸ªç±»
 	WinInternetProxy proxy;
 
 	// query proxy
-	// ²éÑ¯ windows ÏµÍ³´úÀí ui ½çÃæĞÅÏ¢
+	// æŸ¥è¯¢ windows ç³»ç»Ÿä»£ç† ui ç•Œé¢ä¿¡æ¯
 	proxy.query_proxy_option();
 	proxy.print_current_config();
 
 	// setting proxy
-	// Çå³ı pac ´úÀí£¬½öÊ¹ÓÃÏµÍ³´úÀí
+	// æ¸…é™¤ pac ä»£ç†ï¼Œä»…ä½¿ç”¨ç³»ç»Ÿä»£ç†
 	proxy.m_proxy_server = "127.0.0.1:1080";
 	proxy.m_proxy_bypass = "localhost;127.*;192.168.*";
 	proxy.m_autoconfig_url = "";//pac
@@ -27,7 +27,7 @@ int main()
 	proxy.m_auto_proxy_url = false;
 	proxy.m_auto_delect = false;
 
-	// ÉèÖÃÅäÖÃÏî
+	// è®¾ç½®é…ç½®é¡¹
 	proxy.set_proxy_option();
 	proxy.print_current_config();
 	return 0;
