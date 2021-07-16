@@ -1,6 +1,6 @@
 # WinInternetProxy
 
-`WinInternetProxy` 是一款 Windows 系统代理配置功能项，可使用代码设置系统代理功能，可应用在 v2ray、trojan-go 等需要设置 `系统IE代理` 类似的工具中。
+`WinInternetProxy` 是一款 Windows 系统代理配置项，可使用代码设置系统代理功能，可应用在 v2ray、trojan-go 等需要设置 `系统IE代理` 类似的工具中。
 
 ### 如何使用？
 ```c++
